@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Playfair Display', serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cosmetic Shop</title>
+</head>
+<body>
+    <a class="w-[320px] md:w-[1903px] py-2.5 bg-black flex justify-center text-[13px]" href="#">
+        <p
+            class="flex items-center gap-1 md:gap-2 text-white text-center text-[13px] font-bold tracking-widest leading-none">
+            <span style="font-family: 'Playfair Display', serif;" class="">FREE SHIPPING ON ORDERS OVER $60</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                <path fill="currentColor" d="m14 18l-1.4-1.45L16.15 13H4v-2h12.15L12.6 7.45L14 6l6 6l-6 6Z" />
+            </svg>
+        </p>
+    </a>
+
+    <!-- navbar -->
+    <nav class="max-w-[1600px] py-[10px] px-[15px] md:py-[20px] md:px-[50px] mx-auto">
+        <div class="flex items-center justify-center gap-5">
+            <ul style="font-family: 'Montserrat', sans-serif;"
+                class="hidden md:flex items-center justify-start text-sm font-bold flex-1 tracking-wider">
+                <li class="p-[12px]"><a href="#">Home</a></li>
+                <li class="p-[12px]"><a href="#">Shop</a></li>
+                <li class="p-[12px]"><a href="#">Track Your Order</a></li>
+                <li class="p-[12px]"><a href="#">Contact Us</a></li>
+            </ul>
+            <!-- hamburgur -->
+            <div class="flex md:hidden items-center justify-start flex-1">
+                <div
+                    class="w-6 h-0.5 bg-black rounded-full before:content-[''] before:absolute before:w-6 before:h-0.5 before:bg-black before:rounded-full before:-translate-y-2 after:absolute after:w-6 after:h-0.5 after:bg-black after:rounded-full after:translate-y-2">
+                </div>
+            </div>
+
+            <div class="p-[7.5px]">
+                <img class="h-[43px] md:h-[61px] w-[130px] md:w-[180px]" src="./img/cosmetics_logo.avif" alt="">
+            </div>
+            <div class="flex items-center gap-1 md:gap-4 flex-1 justify-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="m21 21l-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+                    <path fill="currentColor"
+                        d="M96 216a16 16 0 1 1-16-16a16 16 0 0 1 16 16Zm88-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16Zm47.65-125.65l-28.53 92.71A23.89 23.89 0 0 1 180.18 184H84.07A24.11 24.11 0 0 1 61 166.59L24.82 40H8a8 8 0 0 1 0-16h16.82a16.08 16.08 0 0 1 15.39 11.6L48.32 64H224a8 8 0 0 1 7.65 10.35ZM213.17 80H52.89l23.49 82.2a8 8 0 0 0 7.69 5.8h96.11a8 8 0 0 0 7.65-5.65Z" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- section hero -->
+    <section>
+        <div class="relative">
+            <div>
+                <img class="w-[320px] h-[340px] md:w-[1903px] md:h-[560px] md:object-cover md:object-center"
+                    src="./img/1.webp" alt="">
+            </div>
+            <div class="absolute left-0 top-0 w-full h-full">
+                <div class="max-w-[1600px] mx-auto flex items-center justify-center h-full p-0 md:p-[50px]">
+                    <div class="py-[40px] px-[35px] flex flex-col gap-2">
+                        <h1 style="font-family: 'Playfair Display', serif;"
+                            class="text-[40px] md:text-[52px] font-bold text-center tracking-wide">Meet Your Match</h1>
+                        <p style="font-family: 'Montserrat', sans-serif;"
+                            class="text-[15px] md:text-base text-center tracking-wider"><strong>Find the perfect
+                                shade</strong></p>
+                        <div class="flex items-center justify-center mt-3">
+                            <a style="font-family: 'Montserrat', sans-serif;"
+                                class="bg-black text-white px-7 py-3 text-center rounded-md" href="#">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- shop the latest -->
+    <section class="md:w-[1903px] mt-[40px]">
+        <div class="w-full pt-[33px] pb-[27px] md:pt-[44px] md:pb-[36px]">
+            <div class="max-w-[1600px] px-[15px] md:px-[50px] mx-auto">
+                <h2 style="font-family: 'Playfair Display', serif;" class="text-[24px] font-bold mb-[30px]">SHOP THE
+                    LATEST</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2">
+                    <!-- item 1 -->
+                    <div class="w-[142px] md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full rounded-t-md hover:scale-105 transition-all duration-500 object-fill"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo
+                                Eyeshadow Pumpkin Earth Matte Gold</p>
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">$12.54 USD</p>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="w-[142px] md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo
+                                Eyeshadow Pumpkin Earth Matte Gold</p>
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">$12.54 USD</p>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="w-[142px] md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo
+                                Eyeshadow Pumpkin Earth Matte Gold</p>
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">$12.54 USD</p>
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="w-[142px] md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo
+                                Eyeshadow Pumpkin Earth Matte Gold</p>
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">$12.54 USD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center mt-3">
+                    <a style="font-family: 'Montserrat', sans-serif;"
+                        class=" border border-x-2 border-y-2 border-x-[#ddb2b1] border-y-[#ddb2b1] text-[#ddb2b1] px-7 py-3 text-center rounded-md"
+                        href="#">View all</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner -->
+    <section>
+        <div class="relative">
+            <div>
+                <img class="w-[320px] h-[340px] md:w-[1903px] md:h-[560px] object-cover" src="./img/3.webp" alt="">
+            </div>
+            <div class="absolute left-0 top-0 w-full h-full">
+                <div class="max-w-[1600px] mx-auto flex items-center justify-start h-full p-0 md:p-[50px]">
+                    <div class="py-[40px] px-[35px] flex flex-col gap-2 max-w-[680px]">
+                        <h1 style="font-family: 'Playfair Display', serif;"
+                            class="text-[40px] text-white font-bold text-left tracking-wide">PLANET POSITIVE</h1>
+                        <p style="font-family: 'Montserrat', sans-serif;" class="text-left text-white tracking-wider">
+                            Organic, natural products from sustainable sources without harmful chemicals and toxins</p>
+                        <div class="flex items-center justify-start mt-3">
+                            <a style="font-family: 'Montserrat', sans-serif;"
+                                class="bg-white text-black px-7 py-3 text-center rounded-md" href="#">Our
+                                Collections</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- shop by collection -->
+    <section class="md:w-[1903px] mt-[40px]">
+        <div class="w-full pt-[33px] pb-[27px] md:pt-[44px] md:pb-[36px]">
+            <div class="max-w-[1600px] px-[15px] md:px-[50px] mx-auto">
+                <h2 style="font-family: 'Playfair Display', serif;" class="text-[24px] font-bold mb-[30px] uppercase">
+                    shop by collection</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-2">
+                    <!-- item 1 -->
+                    <div class="w-[290px] md:w-[492px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full rounded-t-md hover:scale-105 transition-all duration-500"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5 bg-[#ffe1e0] rounded-b-md">
+                            <a style="font-family: 'Playfair Display', serif;"
+                                class="font-bold text-[20px] flex items-center gap-2" href="#">
+                                <span>Duos</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m14 18l-1.4-1.45L16.15 13H4v-2h12.15L12.6 7.45L14 6l6 6l-6 6Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="w-[290px] md:w-[492px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5 bg-[#ffe1e0] rounded-b-md">
+                            <a style="font-family: 'Playfair Display', serif;"
+                                class="font-bold text-[20px] flex items-center gap-2" href="#">
+                                <span>Duos</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m14 18l-1.4-1.45L16.15 13H4v-2h12.15L12.6 7.45L14 6l6 6l-6 6Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="w-[290px] md:w-[492px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5 bg-[#ffe1e0] rounded-b-md">
+                            <a style="font-family: 'Playfair Display', serif;"
+                                class="font-bold text-[20px] flex items-center gap-2" href="#">
+                                <span>Duos</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m14 18l-1.4-1.45L16.15 13H4v-2h12.15L12.6 7.45L14 6l6 6l-6 6Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- shop duos -->
+    <section class="md:w-[1903px] mt-[40px]">
+        <div class="w-full pt-[33px] pb-[27px] md:pt-[44px] md:pb-[36px]">
+            <div class="max-w-[1600px] px-[15px] md:px-[50px] mx-auto">
+                <h2 style="font-family: 'Playfair Display', serif;" class="text-[24px] font-bold mb-[30px]">SHOP DUOS
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2">
+                    <!-- item 1 -->
+                    <div class="w-[142px] md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full rounded-t-md hover:scale-105 transition-all duration-500 object-fill"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo
+                                Eyeshadow Pumpkin Earth Matte Gold</p>
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">$12.54 USD</p>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="w-[142px] md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo
+                                Eyeshadow Pumpkin Earth Matte Gold</p>
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">$12.54 USD</p>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="w-[142px] md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo
+                                Eyeshadow Pumpkin Earth Matte Gold</p>
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">$12.54 USD</p>
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="w-[142px] md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo
+                                Eyeshadow Pumpkin Earth Matte Gold</p>
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">$12.54 USD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center mt-3">
+                    <a style="font-family: 'Montserrat', sans-serif;"
+                        class=" border border-x-2 border-y-2 border-x-[#ddb2b1] border-y-[#ddb2b1] text-[#ddb2b1] px-7 py-3 text-center rounded-md"
+                        href="#">View all</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A quick word -->
+    <section class="md:w-[1903px] mt-[40px]">
+        <div class="w-full pt-[33px] pb-[27px] md:pt-[44px] md:pb-[36px]">
+            <div class="max-w-[1600px] px-[15px] md:px-[50px] mx-auto">
+                <div class="relative">
+                    <div>
+                        <img class="h-[433px] md:h-[693px] rounded-md" src="./img/3.jpg" alt="">
+                    </div>
+                    <div class="absolute top-[95%] right-3 md:top-[23%] md:-right-1">
+                        <div class="w-[261px] h-[428px] md:w-[532px] md:h-[376px] bg-[#ffe1e0] rounded-md">
+                            <div class="p-[30px] md:p-[60px] space-y-10 md:space-y-6 h-full w-full">
+                                <h2 style="font-family: 'Playfair Display', serif;"
+                                    class="text-[20px] md:text-[24px] font-bold">A QUICK WORD...</h2>
+                                <p style="font-family: 'Montserrat', sans-serif;"
+                                    class="text-[#000000bf] text-[15px] md:text-base">Tasha started this business with a
+                                    vision to provide ethically sourced, sustainable natural products without the hefty
+                                    price tag associated with some of the leading brands.</p>
+                                <a style="font-family: 'Montserrat', sans-serif;"
+                                    class="bg-black inline-block text-white px-7 py-3 text-center rounded-md"
+                                    href="#">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FABULOUS LIPSTICK -->
+    <section class="md:w-[1903px] mt-[440px] md:mt-[40px]">
+        <div class="w-full pt-[33px] pb-[27px] md:pt-[44px] md:pb-[36px]">
+            <div class="max-w-[1600px] px-[15px] md:px-[50px] mx-auto">
+                <h2 style="font-family: 'Playfair Display', serif;" class="text-[24px] font-bold mb-[30px]">FABULOUS
+                    LIPSTICK COLORS</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2">
+                    <!-- item 1 -->
+                    <div class="w-[142px] md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full rounded-t-md hover:scale-105 transition-all duration-500 object-fill"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo
+                                Eyeshadow Pumpkin Earth Matte Gold</p>
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">$12.54 USD</p>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="w-[142px] md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo
+                                Eyeshadow Pumpkin Earth Matte Gold</p>
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">$12.54 USD</p>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="w-[142px] md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo
+                                Eyeshadow Pumpkin Earth Matte Gold</p>
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">$12.54 USD</p>
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="w-[142px] md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo
+                                Eyeshadow Pumpkin Earth Matte Gold</p>
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">$12.54 USD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center mt-3">
+                    <a style="font-family: 'Montserrat', sans-serif;"
+                        class=" border border-x-2 border-y-2 border-x-[#ddb2b1] border-y-[#ddb2b1] text-[#ddb2b1] px-7 py-3 text-center rounded-md"
+                        href="#">View all</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- premium organic -->
+    <section class="md:w-[1903px] mt-[40px]">
+        <div class="w-full pt-[33px] pb-[27px] md:pt-[44px] md:pb-[36px]">
+            <div class="max-w-[1600px] px-[15px] md:px-[50px] mx-auto">
+                <h2 style="font-family: 'Playfair Display', serif;" class="text-[24px] font-bold mb-[30px]">Premium
+                    Organic Cosmetics</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                    <div class="overflow-hidden bg-cover row-span-2 col-span-2">
+                        <div>
+                            <img class="" src="./img/4.webp" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="h-full" src="./img/5.webp" alt="">
+                    </div>
+                    <div class="overflow-hidden bg-cover flex flex-col">
+                        <div class="flex-1">
+                            <img class="w-full h-full rounded-t-md hover:scale-105 transition-all duration-500"
+                                src="./img/all.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5 bg-[#ffe1e0] rounded-b-md">
+                            <a style="font-family: 'Playfair Display', serif;"
+                                class="font-bold text-[20px] flex items-center gap-2" href="#">
+                                <span>Duos</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m14 18l-1.4-1.45L16.15 13H4v-2h12.15L12.6 7.45L14 6l6 6l-6 6Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="md:w-[1903px] mt-[440px] md:mt-[40px]">
+        <div class="w-full pt-[33px] pb-[27px] md:pt-[44px] md:pb-[36px]">
+            <div class="max-w-[1600px] px-[15px] md:px-[50px] mx-auto">
+                <h2 style="font-family: 'Playfair Display', serif;" class="text-[24px] font-bold mb-[30px]">BEAUTY BLOG
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2">
+                    <!-- item 1 -->
+                    <div class="w-full md:w-[366px] overflow-hidden bg-cover ">
+                        <div class="h-[366px] bg-gray-300">
+                            <img class="w-full max-h-[366px] rounded-t-md hover:scale-105 transition-all duration-500 object-contain"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <!-- <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">lorem30</p> -->
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">Lorem ipsum dolor, sit
+                                amet consectetur adipisicing elit. Accusamus quis in non expedita nisi aspernatur at!
+                                Facere harum commodi tenetur.</p>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="w-full md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <!-- <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo Eyeshadow Pumpkin Earth Matte Gold</p> -->
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Sunt provident expedita reprehenderit ducimus
+                                corporis consectetur explicabo cum, ut temporibus in.</p>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="w-full md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <!-- <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo Eyeshadow Pumpkin Earth Matte Gold</p> -->
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Veritatis tenetur ullam id illum soluta incidunt
+                                provident doloribus, rem eum qui?</p>
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="w-full md:w-[366px] overflow-hidden bg-cover">
+                        <div>
+                            <img class="w-full hover:scale-105 transition-all duration-500 rounded-t-md"
+                                src="./img/2.webp" alt="">
+                        </div>
+                        <div class="p-1 md:p-5">
+                            <!-- <p style="font-family: 'Playfair Display', serif;" class="font-bold text-[14px]">Duo Eyeshadow Pumpkin Earth Matte Gold</p> -->
+                            <p style="font-family: 'Montserrat', sans-serif;" class="font-normal">Lorem, ipsum dolor sit
+                                amet consectetur adipisicing elit. Officiis, doloremque. Iure ratione debitis quisquam
+                                mollitia. Distinctio ipsa ex accusantium sapiente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="flex items-center justify-center mt-3">
+                    <a style="font-family: 'Montserrat', sans-serif;" class=" border border-x-2 border-y-2 border-x-[#ddb2b1] border-y-[#ddb2b1] text-[#ddb2b1] px-7 py-3 text-center rounded-md" href="#">View all</a>
+                </div>  -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
